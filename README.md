@@ -11,10 +11,13 @@ In order to simplicy the problem, since the hangman is based on such dataset, I 
 At that point, the number of possible letters is fixed, the length of the words is fixed, so the final state it's just the concatenation of those 2 infos + how many lives are left to the agent.
 
 ## Action
-For the action, since the set of possible letters is fixed, I just outputed a distribution over list, masked out the ones already tried, and renormalized
+For the action, since the set of possible letters is fixed, I just outputed a distribution over list, masked out the ones already tried, and re-normalized
 
 ## Algorithm
 For the learning I used PPO implemented from scratch using TD(0)
 
 ## Result
-I'm currently running the code to see the results, but more importantly checking if there are bugs around the code 
+The learning is successful and rewards can be checked at the end of the `ipynb` notebook
+
+## Possible improvement
+Consider the prior of humans in the sampling of the words (estimated from a big corpora of text?)
