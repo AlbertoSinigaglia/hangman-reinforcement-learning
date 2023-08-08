@@ -3,7 +3,7 @@
 This repository contains the code for a quick fun little project I coded trying to solve the game of hangman using Reinforcement Learning
 
 ## Dataset
-For the dataset I used a file downloaded from [here](https://github.com/dwyl/english-words) which should contain all words in English (I've not checked)
+For the dataset I used a file downloaded from [here](https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-usa-no-swears-medium.txt) which should contain all words in English (I've not checked)
 
 ## State
 In order to simplicy the problem, since the hangman is based on such dataset, I just went and check the longest word, and considered the shorter ones with additional padding at the end.
